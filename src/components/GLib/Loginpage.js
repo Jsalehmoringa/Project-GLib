@@ -20,7 +20,7 @@ function Loginpage() {
 
   useEffect(() => {
     google.accounts.id.initialize({
-      client_id: "1053999025061-fv82hf5vg46ahvc2uanc7egubi5abdk1.apps.googleusercontent.com",
+      client_id: "",
       SameSite: "None",
       callback: handleCallbackResponse
     })
