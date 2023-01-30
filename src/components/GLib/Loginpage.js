@@ -1,44 +1,37 @@
-import React, { useEffect, useState }  from "react";
-import jwtDecode from 'jwt-decode';
+import React, { useState }  from "react";
 import { useNavigate } from "react-router-dom";
+import image from "../GLib/books.jpg"
 
-const google = window.google;
 
 function Loginpage() {
+  const navigate = useNavigate()
 
-    const [user, setUser] =useState({});
-    const navigate =useNavigate();
+    const [userEmail, setUserEmail] = useState("")
+    const [userPassword, setUserPassword] = useState("")
+    const [isLoggedIn,  setIsLoggedIn ] = useState(false)
+    
+    function addUser(e) {
+      e.preventDefault() 
 
-  function handleCallbackResponse(response) {
-    var userObj = jwtDecode(response.credential)
-    setUser(userObj)
-    document.getElementById("signinDiv").hidden = true
-    if (user) {
-      navigate("/dashboard");
+      setIsLoggedIn(true)
+      if(isLoggedIn) {
+        return (navigate("/dashboard"))
+      }
     }
-  }
-
-  useEffect(() => {
-    google.accounts.id.initialize({
-      client_id: "",
-      SameSite: "None",
-      callback: handleCallbackResponse
-    })
-    google.accounts.id.prompt()
-  
-    google.accounts.id.renderButton(
-      document.getElementById("signinDiv"),
-      { size: "large", width: 500, height: 500, theme: "filled_blue", text: "signup_with" },
-  )   
-})
 
     return (
-        <div className="sign">
-          <div id="signinDiv"> 
-
-          </div>
+      <div className="sign-form" style={{ backgroundImage:`url(${image})`,backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
+      <h1>Please fill the login form to continue.</h1>
+      <form onSubmit={(e) => addUser(e)}>
+        <label>Email: </label>
+        <input className="input-text" required="required" placeholder="email..." value={userEmail} onChange={(e) => setUserEmail(e.target.value)}></input>
+        <label>Password: </label>
+        <input className="input-text" required="required" placeholder="password..." value={userPassword} onChange={(e) => setUserPassword(e.target.value)}></input>
+        <input type="submit" placeholder="submit"></input>
+      </form>
       </div>
     )
-}
+
+    }
 
 export default Loginpage;

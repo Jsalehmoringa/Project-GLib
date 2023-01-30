@@ -106,3 +106,30 @@
 .card-image {
   width: 130px;
 }
+
+.sign-form {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    font-size: xx-large;
+    color: white;
+    width: 100%;
+    padding: 12px 20px;
+    display: flex;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+/* .sign-form form {
+  margin-left: 250px;
+  margin-top: 200px;
+  top: 20%;
+  text-align: center;
+} */
+
+.input-text {
+  width: 100%;
+  margin-right: 150px;
+}

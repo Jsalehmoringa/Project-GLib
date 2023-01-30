@@ -9,6 +9,7 @@ function Homepage() {
         <div className="home">
             <nav className="nav-home">
                 <Link to="/login">Log In</Link>
+                <Link to="/register">Register</Link>
             </nav>
             <div className="overlay" style={{ backgroundImage:`url(${image})`,backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
                 <h1>G-Lib</h1>

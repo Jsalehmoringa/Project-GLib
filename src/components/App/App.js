@@ -6,6 +6,7 @@ import Loginpage from '../GLib/Loginpage';
 import MyLibrary from '../GLib/MyLibrary';
 import Dashboard from '../GLib/Dashboard';
 import Logoutpage from '../GLib/Logoutpage';
+import Registerpage from '../GLib/Registerpage';
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
         client_id: "1053999025061-fv82hf5vg46ahvc2uanc7egubi5abdk1.apps.googleusercontent.com",
         "Accept": "application/json",
         "Content-type": "application/json",
+        Samesite: "Secure"
       }
     })
       .then((response) => response.json())
@@ -38,6 +40,7 @@ function App() {
         <Route exact path="/" element={<Homepage/>}></Route>
         <Route exact path="/dashboard" element={<Dashboard createLib={createLib} props={results} searchQuery={searchQuery} />}></Route>
         <Route exact path="/login" element={<Loginpage/>}></Route>
+        <Route exact path="/register" element={<Registerpage/>}></Route>
         <Route exact path="/dashboard/logout" element={<Logoutpage/>}></Route>
         <Route exact path="/dashboard/mylibrary" element={<MyLibrary props={addbook}/>}></Route>
       </Routes>
