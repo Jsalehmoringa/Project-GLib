@@ -4,10 +4,25 @@
 Google books is a platform that provides users with information about books from authors worldwide. 
 
 # Live Link 
-- [project-g-lib.vercel.app]
-> To view in VSCode, run (code .) in your terminal 
 
-# Development 
+        project-g-lib.vercel.app
+
+> To view in VSCode:
+Open the terminal on your computer.
+Clone the repo to your terminal
+
+        https://github.com/Jsalehmoringa/Project-GLib.git
+
+Navigate to the project directory:
+
+        cd Project-GLib
+
+Open  the folder using VSCode:
+
+        code .
+
+# Development repo:
+
 - https://github.com/Jsalehmoringa/Project-Glib-2
 
 ## Requirements
@@ -21,7 +36,7 @@ In order for you to use the content on this repo ensure you have the following:
 
 ## Setup
 
-After unbundling the project:
+To set up the project:
 
 1. Run `npm install` in your terminal.
 3. In a new terminal, run `npm start`. This will run your React app on port.
@@ -46,7 +61,7 @@ The page will reload when you make changes.\
 
 
  
- # Author:[Jamil,Jacob,Abdup]
+ # Author:[Jamil,Jacob,Abdub]
 
  # License
  - The project is licensed by `ISC`.
