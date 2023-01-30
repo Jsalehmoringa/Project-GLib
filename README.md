@@ -4,10 +4,11 @@
 Google books is a platform that provides users with information about books from authors worldwide. 
 
 # Live Link 
-- []
+- [project-g-lib.vercel.app]
 > To view in VSCode, run (code .) in your terminal 
 
-# Development installation
+# Development 
+- https://github.com/Jsalehmoringa/Project-Glib-2
 
 ## Requirements
 
