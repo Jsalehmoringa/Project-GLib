@@ -42,26 +42,17 @@ To set up the project:
 3. In a new terminal, run `npm start`. This will run your React app on port.
 The page will reload when you make changes.\
 
-## Core Deliverables
-- As a user you should be;
-- greeted with a page that has information about what the application is all about.
-- Users should be able to search for a list of books by name, author or year of publication.
-- Users should be able to register and log in to the application in order to use it.
-- An authenticated user should be able to create a bookshelf and add books to it.
-- An authenticated user should be able to logout of the application.
-
-
-## Extra Deliverables
-- The following deliverables will earn you extra points:
-- An authenticated user should be able to remove books from bookshelves.
-- An authenticated user should view books in a paginated format. (Show only 10 books at a time while providing an option to view the next and previous 10 books)
-
-
-
-
+## Project details
+When the app loads the user will be directed to a homepage containing the details of what the ap is about.There is a log-in link and a sign-in link on the navigation bar of the homepage which direct the user to a form for logging in, if the user has previously signed in and a sign-in form for new users.Upon filling the form and submitting, you will be directed to a dashboard containing a search bar where the user can search for books by name of book, author or date of publication and the books will be displayed on the page.To add a book to our bookshelf click the add book to bookshelf button, then click the My-library link in the navigation bar to view your bookeshelf.To log out of the app, there is a logout link on the dashboard navigation bar.Click on it and you will be directed to the homepage.We hope you enjoy your experience with the application!
 
  
- # Author:[Jamil,Jacob,Abdub]
+ # Authors 
+ 
+- [Jamil Saleh](https://github.com/Jsalehmoringa)
+        
+- [Jacob Muchori] (https://github.com/JacobMuchori)
+        
+- [Abdub Doyo] (https://github.com/Abdub2)
 
  # License
- - The project is licensed by `ISC`.
+   [ISC]
