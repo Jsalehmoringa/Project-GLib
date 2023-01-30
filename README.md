@@ -24,7 +24,6 @@ In order for you to use the content on this repo ensure you have the following:
 After unbundling the project:
 
 1. Run `npm install` in your terminal.
-2. Run `npm run server`. This will run your backend on port.
 3. In a new terminal, run `npm start`. This will run your React app on port.
 The page will reload when you make changes.\
 
